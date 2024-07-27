@@ -3,107 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CK Free TV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        header {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 2px solid #333;
-        }
-        nav {
-            background-color: #1e1e1e;
-            overflow: hidden;
-            border-bottom: 2px solid #333;
-            padding: 0 20px;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: #e0e0e0;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #333;
-            color: #ffffff;
-        }
-        .container {
-            padding: 20px;
-            text-align: center;
-        }
-        .live-stream {
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-        .live-stream video {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .neon-button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 5px;
-            background-color: #0ff;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-        }
-        .neon-button:hover {
-            background-color: #0cc;
-            box-shadow: 0 0 20px #0cc, 0 0 30px #0cc, 0 0 40px #0cc;
-        }
-        footer {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Asiri Home Stay</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>CK Free TV</h1>
+        <h1>Welcome to Asiri Home Stay</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Live Stream</a>
-        <a href="#">Schedule</a>
-        <a href="#">Contact</a>
-    </nav>
-    <div class="container">
-        <div class="live-stream">
-            <video controls>
-                <source src="https://watch.livecricketsl.xyz/sport/cricket.php?id=paparehd" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div>
-                <a href="#" class="neon-button">Watch Live</a>
-                <a href="#" class="neon-button">Full Screen</a>
-            </div>
-        </div>
-    </div>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to Asiri Home Stay. Enjoy your stay!</p>
+        <img src="images/hotel.jpg" alt="Hotel Image">
+    </section>
+
+    <section id="rooms">
+        <h2>Rooms</h2>
+        <p>Our rooms offer the best comfort and luxury.</p>
+        <!-- Add room details here -->
+    </section>
+
+    <section id="amenities">
+        <h2>Amenities</h2>
+        <p>We offer a variety of amenities to make your stay enjoyable.</p>
+        <!-- Add amenities details here -->
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about Asiri Home Stay and our mission.</p>
+        <!-- Add about us details here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="booking">
+        <h2>Book Now</h2>
+        <form id="booking-form">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+            <button type="submit">Book</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2024 CK Free TV. All rights reserved.</p>
+        <p>&copy; 2024 Asiri Home Stay. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text */
+    background-color: #e0f7fa; /* Light blue background */
+    color: #004d40; /* Darker text color */
 }
 
 header {
-    background-color: #1f1f1f; /* Darker header background */
+    background-color: #00acc1; /* Darker blue header background */
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
@@ -36,7 +36,7 @@ section {
 section img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ffffff; /* Light border for images */
+    border: 2px solid #004d40; /* Darker border for images */
 }
 
 form {
@@ -48,24 +48,32 @@ form label {
     margin: 5px 0;
 }
 
-form input, form textarea, form button {
+form input, form button {
     margin: 5px 0;
     padding: 10px;
-    background-color: #1f1f1f; /* Dark input background */
-    color: #ffffff; /* Light text */
-    border: 1px solid #ffffff; /* Light border */
+    background-color: #ffffff; /* Light input background */
+    color: #004d40; /* Darker text */
+    border: 1px solid #004d40; /* Darker border */
 }
 
 form button {
+    background-color: #00acc1; /* Button background color */
+    color: #ffffff; /* Button text color */
     cursor: pointer;
 }
 
 footer {
-    background-color: #1f1f1f; /* Darker footer background */
+    background-color: #00acc1; /* Darker footer background */
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
 }

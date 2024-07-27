@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CK Free TV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        nav {
+            background-color: #1e1e1e;
+            overflow: hidden;
+            border-bottom: 2px solid #333;
+            padding: 0 20px;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #ffffff;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .live-stream {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .live-stream video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .neon-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            background-color: #0ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .neon-button:hover {
+            background-color: #0cc;
+            box-shadow: 0 0 20px #0cc, 0 0 30px #0cc, 0 0 40px #0cc;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CK Free TV</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Live Stream</a>
+        <a href="#">Schedule</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="live-stream">
+            <video controls>
+                <source src="your-live-stream-source.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div>
+                <a href="#" class="neon-button">Watch Live</a>
+                <a href="#" class="neon-button">Full Screen</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 CK Free TV. All rights reserved.</p>
+    </footer>
+</body>
+</html>
